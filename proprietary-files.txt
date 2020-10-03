@@ -425,11 +425,11 @@ vendor/lib64/libssd.so
 # DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
 system_ext/lib64/libdpmframework.so
 
-# DRM widevine - from Mi 9T Pro QKQ1.190825.002 V11.0.8.0.QFKCNXM
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|3522890cda1defadaaa79259f0fd28490f533c79
-vendor/lib64/libwvhidl.so|6418b2ace2f3c9758ac54edb85a4dea43accfa9a
-vendor/lib64/mediadrm/libwvdrmengine.so|4f78d73cfddc0b5bc9a5dcbb20470beaad0d3047
+# DRM widevine - from Mi 10 RKQ1.200710.002-V12.1.2.0.RJBMIXM-release-keys
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|f79495dd80baaf36c414d27f53f4527096b999a8
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+vendor/lib64/libwvhidl.so|72b4322c67dd5888443e61272aa8aa301841bf1d
+vendor/lib64/mediadrm/libwvdrmengine.so|362e8a58036b74f4784730f257c543af69e43da4
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
