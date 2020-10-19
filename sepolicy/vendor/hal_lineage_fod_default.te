@@ -1,3 +1,5 @@
+type hal_lineage_fod_default_exec, fs_type, dev_type, file_type;
+type hal_lineage_fod_default;
 type sysfs_fod, sysfs_type, fs_type;
 
 allow hal_lineage_fod_default sysfs_fod:file rw_file_perms;
