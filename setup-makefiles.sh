@@ -25,9 +25,9 @@ INITIAL_COPYRIGHT_YEAR=2020
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-DOT_ROOT="${MY_DIR}/../../.."
+OCTAVI_ROOT="${MY_DIR}/../../.."
 
-HELPER="${DOT_ROOT}/vendor/dot/build/tools/extract_utils.sh"
+HELPER="${OCTAVI_ROOT}/vendor/octavi/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -35,7 +35,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for common
-setup_vendor "${DEVICE}" "${VENDOR}" "${DOT_ROOT}" false
+setup_vendor "${DEVICE}" "${VENDOR}" "${OCTAVI_ROOT}" false
 
 # Copyright headers and guards
 write_headers "${DEVICE}"
