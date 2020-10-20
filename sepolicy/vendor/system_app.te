@@ -12,3 +12,8 @@ allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read };
 allow system_app sysfs_battery_supply:file { open };
 allow system_app sysfs_battery_supply:file { getattr };
+
+# Allow binder communication with hal_touchfeature_xiaomi_default
+binder_call(system_app, hal_touchfeature_default)
+
+allow system_app hal_touchfeature_hwservice_xiaomi:hwservice_manager find;
