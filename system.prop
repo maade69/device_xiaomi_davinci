@@ -1,4 +1,8 @@
 # Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=cherokee
 
 # Camera
@@ -12,9 +16,6 @@ persist.vendor.cne.feature=1
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
-
-# lmkd
-ro.config.low_ram=false
 
 # Media
 media.aac_51_output_enabled=true
@@ -50,3 +51,10 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+# lmkd
+ro.lmk.use_psi=true
+ro.lmk.low_ram=false
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true

@@ -75,6 +75,10 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
 
+#A2DSP
+vendor/lib64/liba2dpoffload.so
+vendor/lib/liba2dpoffload.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
