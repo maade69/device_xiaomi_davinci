@@ -49,7 +49,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.sm6150 \
     audio.usb.default \
@@ -98,9 +97,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 # A2DP
-#PRODUCT_PACKAGES += \
-#   android.hardware.bluetooth.a2dp@1.0-impl \
-#    android.hardware.bluetooth.a2dp@1.0-service
+PRODUCT_PACKAGES += \
+  audio.a2dp.default \
+  android.hardware.bluetooth.a2dp@1.0-impl \
+  android.hardware.bluetooth.a2dp@1.0-service
 
 # Bluetooth
 PRODUCT_PACKAGES += \
