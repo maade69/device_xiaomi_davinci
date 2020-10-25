@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_davinci.mk
+    $(LOCAL_DIR)/cherish_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_davinci-user \
-    octavi_davinci-userdebug \
-    octavi_davinci-eng
+    cherish_davinci-user \
+    cherish_davinci-userdebug \
+    cherish_davinci-eng

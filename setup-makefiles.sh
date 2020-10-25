@@ -27,7 +27,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 OCTAVI_ROOT="${MY_DIR}/../../.."
 
-HELPER="${OCTAVI_ROOT}/vendor/octavi/build/tools/extract_utils.sh"
+HELPER="${OCTAVI_ROOT}/vendor/cherish/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
