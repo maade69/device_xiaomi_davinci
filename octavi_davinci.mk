@@ -30,6 +30,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Official-ify
 OCTAVI_BUILDTYPE := Official
 OCTAVI_BUILDTYPE=Official
+OCTAVI_DEVICE_MAINTAINER := maade69
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := octavi_davinci
