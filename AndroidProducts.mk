@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_davinci.mk
+    $(LOCAL_DIR)/aosp_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_davinci-user \
-    cherish_davinci-userdebug \
-    cherish_davinci-eng
+    aosp_davinci-user \
+    aosp_davinci-userdebug \
+    aosp_davinci-eng
