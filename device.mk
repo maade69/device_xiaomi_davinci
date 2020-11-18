@@ -23,17 +23,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/davinci/davinci-vendor.mk)
 
-# Some OctaviOs requirements
-YOUR_HW_PLATFORM := sm8150
-
 # Hardware
 PRODUCT_BOARD_PLATFORM := sm6150
 PRODUCT_USES_QCOM_HARDWARE := true
-
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sm8150/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sm8150/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -175,8 +167,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/octavi/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-    
+      
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -307,7 +298,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-octavi
+    $(LOCAL_PATH)/overlay-streak
 
 # Power
 PRODUCT_PACKAGES += \

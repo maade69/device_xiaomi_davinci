@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_davinci.mk
+    $(LOCAL_DIR)/streak_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_davinci-user \
-    octavi_davinci-userdebug \
-    octavi_davinci-eng
+    streak_davinci-user \
+    streak_davinci-userdebug \
+    streak_davinci-eng
