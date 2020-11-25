@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2020 The LineageOS Project
 #
@@ -21,15 +22,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common StatixOS stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+# Inherit some common ProjectStreak stuff.
+$(call inherit-product, vendor/streak/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 TARGET_USES_BLUR := true
 
-PRODUCT_NAME := statix_davinci
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := streak_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
 PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="davinci" \
+    TARGET_DEVICE="davinci"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
