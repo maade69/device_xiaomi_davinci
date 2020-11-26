@@ -25,6 +25,7 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 # Inherit some common ProjectStreak stuff.
 $(call inherit-product, vendor/streak/config/common_full_phone.mk)
 
+STREAK_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_USES_BLUR := true
