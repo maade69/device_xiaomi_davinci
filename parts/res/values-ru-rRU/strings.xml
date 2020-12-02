@@ -73,4 +73,19 @@
     <string name="touch_sensitivity_summary">Управляет чувствительностью касания при повторных нажатиях</string>
     <string name="touch_resistant_title">Края сенсора</string>
     <string name="touch_resistant_summary">Уменьшает чувствительность сенсора по краям, чтобы избежать ложных нажатий</string>
+    
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Цвета дисплея</string>
+    <string name="kcal_settings_summary">Отрегулируйте цвет вашего дисплея</string>
+    <string name="kcal_enable_title">Включить цветовую настройку дисплея</string>
+    <string name="kcal_enable_summary">Позволяет настроить цвет дисплея под пользователя</string>
+    <string name="red_slider_title">Красный</string>
+    <string name="green_slider_title">Зеленый</string>
+    <string name="blue_slider_title">Синий</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Калибровка цвета</string>
+    <string name="saturation_slider_title">Насыщенность</string>
+    <string name="reset_default_button_title">Сброс до конфигурации по умолчанию</string>
+    <string name="reset_default_button_summary">Сбросить все настройки этого экрана</string>
+    <string name="contrast_slider_title">Контраст</string>
 </resources>
