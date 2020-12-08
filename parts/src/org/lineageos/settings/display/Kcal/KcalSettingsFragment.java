@@ -110,6 +110,8 @@ public class KcalSettingsFragment extends PreferenceFragment implements
     private void configurePreferences() {
         mKcalSwitchPreference.setEnabled(true);
         mKcalSwitchPreference.setOnPreferenceChangeListener(this);
+        mKcalSwitchPreference = (SwitchPreference) findPreference("kcal_enable");
+        mResetButton = (Preference) findPreference("reset_default_button");
 
         // Set the preference so it resets all the other preference's values, and applies the configuration on click
         mResetButton.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
