@@ -23,6 +23,15 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/davinci/davinci-vendor.mk)
 
+<<<<<<< HEAD
+=======
+# Gapps
+ifeq ($(WITH_GAPPS), true)
+    $(call inherit-product, vendor/gapps/gapps.mk)
+    DOT_BUILD_TYPE:=BETA_GAPPS
+endif
+
+>>>>>>> b60cdce... davinci: don't build trust HAL
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -372,10 +381,6 @@ PRODUCT_PACKAGES += \
 # Touchscreen
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # Uevent
 PRODUCT_COPY_FILES += \
